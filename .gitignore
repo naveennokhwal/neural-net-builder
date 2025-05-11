@@ -17,6 +17,7 @@ data/processed/*
 notebooks/*.ipynb_checkpoints
 *.log
 *.tmp
+src/model.pkl
 
 # OS and IDE
 .DS_Store
