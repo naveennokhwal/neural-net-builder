@@ -98,3 +98,9 @@ To evaluate the saved model:
 - Done!
 
 ### For full instructions, see `docs\usage_guide.md`
+
+---
+
+## 🙏 Acknowledgements
+
+A special thank you to [Andrej Karpathy's YouTube channel](https://www.youtube.com/@AndrejKarpathy) for the incredible tutorials and explanations. Building this neural network from scratch would not have been possible without the knowledge and inspiration provided through his videos.
