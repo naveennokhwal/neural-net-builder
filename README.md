@@ -26,22 +26,28 @@ The goal was to:
 ---
 
 ## 📁 Project Structure
-
-neural-network-framework/
-│
-├── data/
-│ └── processed/
-│ └── Iris_noindex.csv # Example dataset
-│
-├── value.py # Core: Auto-diff engine (Value class)
-├── model.py # Example: Define your own architecture here
-├── train.py # Training loop (edit to match your design)
-├── evaluate.py # Evaluation script
-├── utils.py # Data preprocessing and evaluation helpers
-├── requirements.txt # Required dependencies
-├── README.md # Project overview (this file)
-└── usage_guide.md # Full usage + customization instructions
-
+```
+neural-network-builder/
+├── data/ # Raw and processed datasets
+│ ├── raw/ # Original data files
+│ └── processed/ # Cleaned and preprocessed data
+├── src/ # Source code for the neural network
+│ ├── init.py
+│ ├── layers.py # Definitions of custom neural network layers
+│ ├── model.py # Model architecture built using layers
+│ ├── train.py # Script to train the model
+│ ├── evaluate.py # Script to evaluate the trained model
+│ ├── graph.py # Code to visualize the computational graph
+│ ├── Value.py # Custom data type to enable flexible tensor operations
+│ └── utils.py # Helper functions (e.g., data loading, preprocessing, metrics)
+├── notebooks/ # Jupyter notebooks for experiments and exploration
+│ └── exploration.ipynb
+├── docs/ # Project documentation and usage guides
+│ └── usage_guide.md
+├── requirements.txt # List of Python dependencies
+├── README.md # Project overview and setup instructions
+└── .gitignore # Specifies files/folders to be ignored by Git
+```
 ---
 
 ## 🧠 About the `Value` Class
@@ -70,8 +76,8 @@ We’ve included a small demo model (`model.py`) that classifies the Iris datase
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/neural-network-framework.git
-   cd neural-network-framework
+   git clone https://github.com/naveennokhwal/neural-network-builder.git
+   cd neural-network-builder
    ```
 Install dependencies:
   ```bash
@@ -86,16 +92,9 @@ To evaluate the saved model:
   ```bash
     python evaluate.py
   ```
-To build your own network:
+### To build your own network:
+- Edit model.py to define a new architecture.
+- Tweak train.py for dataset/training config.
+- Done!
 
-Edit model.py to define a new architecture.
-
-Tweak train.py for dataset/training config.
-
-Done!
-
-For full instructions, see usage_guide.md
-
-📚 Requirements
-pandas>=1.5.0
-(Note: No need for NumPy or PyTorch)
+### For full instructions, see `docs\usage_guide.md`
