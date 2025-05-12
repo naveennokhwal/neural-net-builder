@@ -1,4 +1,6 @@
-numpy
 pandas
 matplotlib
 python-graphviz graphviz
+pickle
+random
+math
